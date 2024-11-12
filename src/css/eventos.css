@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 6%;
+    z-index: 1000;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header .logo {
+    color: black;
+    cursor: pointer;
+}
+
+.toggle a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.text {
+    position: relative;
+    z-index: 10;
+    margin-top: 0px; 
+}
+
+.text h1 {
+    color: #000;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 67.2px */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+  
+.text h4 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+  
+.text h6 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+  
+.text p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    margin-bottom: 20px
+}
+  
+
+
+.showcase-participe {
+    background: #fff;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 6%;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.text-participe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%; 
+}
+
+.text-participe h5, .text-participe h3 {
+    flex: 1;
+    margin: 0;
+    display: block; 
+}
+
+.text-participe h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+.text-participe p {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 550px; 
+}
+
+.participantes-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 100px;
+}
+
+.opicao-participantes {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.opicao-participantes img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.opicao-participantes h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.opicao-participantes p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.opicao-participantes button {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 10px 0;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.showcase-testemunho {
+    background: #fff;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 6%;
+    gap: 50px;
+}
+
+.showcase-testemunho img {
+    height: 600px;
+    flex: 1 0 0;
+    border-radius: 30px;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.testimonial-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rating {
+    margin-bottom: 15px;
+}
+
+.star {
+    color: #000000;
+    font-size: 24px;
+}
+
+.quote {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+.autor {
+    margin-top: auto;
+}
+
+.nome {
+    font-weight: bold;
+    margin: 0;
+}
+
+.ocupacao {
+    color: #666;
+    margin: 4px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+}
+
+
+.showcase-eventos {
+    background: #fff;
+    min-height: 5vh;
+    margin: 10px 6%;
+    gap: 50px;
+}
+
+.header-eventos h2 {
+    font-size: 36px;
+    margin-top: 60px;
+    color: #000;
+    font-weight: 700;
+}
+
+.descricao {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.data {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.event-image img{
+    width: 130px;
+    height: 130px;
+    background-color: #ddd;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.detalhes-evento {
+    flex-grow: 1;
+}
+
+.horario {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.titulo-do-evento {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.descricao-do-evento {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.local-do-evento {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.localizacao-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #524747;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.button-Ver-localizacao {
+    background-color: #fff; 
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.button-Ver-localizacao:hover {
+    background-color: #000;
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+.link-localizacao {
+    text-decoration: none;
+    color: rgb(43, 36, 36); 
+    font-weight: 400;
+    padding: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-localizacao:hover {
+    color: #ffffff; 
+    transform: translateY(-2px); 
+}
+
+.cta-card {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cta-content {
+    flex-grow: 1;
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.cta-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000000; 
+    color: #fff; 
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+
+.cta-image {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: white;
+    margin-top: auto;
+    padding: 10px 6%;
+}
+.footer-content {
+    max-width: 1200px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-footer {
+    font-weight: bold;
+    font-size: 24px;
+}
+.social-icons a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer hr {
+    border: none;
+    margin: 20px 0;
+}
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+
+/* Ajustes para telas menores que 1024px */
+@media (max-width: 1024px) {
+    .showcase, .showcase-homenageado, .showcase-poesiadomes, .showcase-testemunho, .showcase-eventos {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        text-align: center;
+    }
+
+    .showcase img, .showcase-homenageado img, .showcase-poesiadomes img, .showcase-testemunho img {
+        height: auto; /* Ajusta a altura para manter a proporção */
+        max-width: 100%; /* Limita a largura máxima para o container */
+    }
+
+    .text h1, .text-homenageado h1, .text-poesiadomes h1, .text-participe h2 {
+        font-size: 36px; /* Reduz o tamanho da fonte */
+    }
+
+    .text h2, .text-homenageado h2, .text-poesiadomes h2 {
+        font-size: 2.5em; /* Ajusta o tamanho para telas menores */
+    }
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 4%;
+    }
+
+    .showcase, .showcase-homenageado, .showcase-poesiadomes, .showcase-testemunho {
+        margin: 10px 4%;
+    }
+
+    .text h1, .text-homenageado h1, .text-poesiadomes h1 {
+        font-size: 32px;
+    }
+
+    .text h2, .text-homenageado h2, .text-poesiadomes h2 {
+        font-size: 2em;
+    }
+
+    .text p, .text-homenageado p, .text-poesiadomes p {
+        font-size: 16px;
+    }
+
+    .showcase img, .showcase-homenageado img, .showcase-poesiadomes img {
+        height: 400px; /* Reduz o tamanho da imagem */
+    }
+}
+
+/* Ajustes para telas menores que 600px */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block; /* Exibe o ícone de menu em telas pequenas */
+    }
+
+    .showcase, .showcase-homenageado, .showcase-poesiadomes {
+        flex-direction: column;
+    }
+
+    .showcase img, .showcase-homenageado img, .showcase-poesiadomes img {
+        width: 100%; /* Faz a imagem ocupar 100% da largura disponível */
+        height: auto; /* Ajusta automaticamente a altura */
+    }
+
+    .text h1, .text-homenageado h1, .text-poesiadomes h1 {
+        font-size: 28px;
+    }
+
+    .text h2, .text-homenageado h2, .text-poesiadomes h2 {
+        font-size: 1.5em;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .button-info, .button {
+        padding: 10px;
+    }
+}
